@@ -1,0 +1,19 @@
+html{
+    margin: 0;
+    height: 100vh;/* For 100% screen height */
+    width: 100vw;/* For 100% screen width */
+    overflow: scroll;
+}
+body{
+    margin: 0;
+    height: 100vh;/* For 100% screen height */
+    width: 100vw;/* For 100% screen width */
+}
+#logo{
+    height: 60px;
+    width: 60px;
+}
+.socialMediaImage{
+    height: 20px;
+    width: 22px;
+}
