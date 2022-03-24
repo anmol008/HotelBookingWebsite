@@ -1,0 +1,28 @@
+/* #loader{
+    border: 12px solid #f3f3f3;
+    width: 70px;
+    border-color: #444444 #f3f3f3 #f3f3f3 #f3f3f3;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    animation: spin 1s linear infinite;
+} */
+html{
+    margin: 0 0;
+    height: 100%;/* For 100% screen height */
+    width: 100%;/* For 100% screen width */
+    overflow: auto;
+}
+
+#loader{
+    border: 12px solid ;
+    width: 70px;
+    border-color: #444444 #f3f3f3 #f3f3f3 #f3f3f3;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}

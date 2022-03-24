@@ -1,13 +1,14 @@
 html{
-    margin: 0;
-    height: 100vh;/* For 100% screen height */
-    width: 100vw;/* For 100% screen width */
+    margin: 0 0;
+    height: 100%;/* For 100% screen height */
+    width: 100%;/* For 100% screen width */
     overflow: auto;
 }
 body{
-    margin: 0;
-    height: 100vh;/* For 100% screen height */
-    width: 100vw;/* For 100% screen width */
+    margin: 0 0;
+    height: 100%;/* For 100% screen height */
+    width: 100%;/* For 100% screen width */
+    background-color: #e0e0e0;
 }
 #logo{
     height: 60px;
@@ -16,4 +17,7 @@ body{
 .socialMediaImage{
     height: 20px;
     width: 22px;
+}
+header,footer{
+    background-color: rosybrown;
 }

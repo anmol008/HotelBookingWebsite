@@ -2,3 +2,10 @@
       height: 200px;
       width: 250px;
 }
+#list_view{
+      margin-left: 2%;
+}
+.description{
+      background-color:  rgb(132,136,139);
+      width: 40%;
+}
