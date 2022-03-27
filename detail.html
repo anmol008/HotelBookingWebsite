@@ -8,20 +8,23 @@
     <title>Detail</title>
     <link rel="stylesheet" href="/styles/common.css">
     <link rel="stylesheet" href="styles/detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
-    <div>
-        <!-- <header> ... -->
-        <header>
-            <a href="index.html" target="">
-                <img id="logo" src="assests\images\logo.png" alt="logo">
-                <a href="login.html" target="">Login</a>
+    <!-- <header> -->
+    <section id="wrapper">
+        <header id="InsideHeader">
+            <a href="index.html" target="_self"><img src="assests\images\logo.png" alt="logo"></a>
+            <a href="login.html" target="_self" style="margin-right: 2em;" id="HeaderLogin">LOGIN</a>
         </header>
-    </div>
+    </section>
+    <!-- </header> -->
 
-        <!-- </header> -->
+
+        <!-- content starts -->
     <section id="content">
 
         <div style="margin-top: 2%;">
@@ -74,26 +77,27 @@
             </p>
         </div>
     </section>
-    <!-- body ends -->
+    <!-- content ends -->
 
+
+    
     <!-- footer starts -->
-    <div>
-        <footer>
-            <a href="contact.html" target=""> Contact Us</a>
-            <br>
-
-            <a href="https://www.facebook.com" target="_blank">
-                <img class="socialMediaImage" alt="Qries" src="assests\images\facebook.png"></a>
-
-            <a href="http://instagram.com" target="_blank">
-                <img class="socialMediaImage" alt="instagram" src="assests\images\instagram.png"></a>
-
-            <a href="http://twitter.com" target="_blank">
-                <img class="socialMediaImage" alt="twitter" src="assests\images\twitter.png"></a>
-
-            <br>
-            <p>&#169 2020 ROOM SEARCH PVT LTD</p>
-        </footer>
+    <footer id="InsideFooter">
+        <div id="contact">
+          <a href="contact.html" target="_self" class="btn btn-info btn-sm" data-bs-toggle="modal"
+            data-bs-target="#contact-us"><span>Contact Us</span></a>
+        </div>
+  
+        <div class="copyright">
+          <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+        </div>
+  
+        <div id="social-media">
+          <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram"></a>
+          <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter"><br></a>
+        </div>
+      </footer>
     </div>
     <!-- footer ends -->
 
