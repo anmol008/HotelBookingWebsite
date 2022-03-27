@@ -1,11 +1,35 @@
+#listView1{
+      display:flex;
+      justify-content: space-evenly;
+      
+      }
+      
+      
+ #mapView{
+            display: none;
+      }
+      
 .hotelImages{
       height: 200px;
       width: 250px;
 }
-#list_view{
-      margin-left: 2%;
-}
-.description{
+
+.hotel1,.hotel2{
       background-color:  rgb(132,136,139);
       width: 40%;
+      margin-right: 55px;
+}
+.hotel3{
+      background-color:  rgb(132,136,139);
+      width: 40%;
+      margin-left: 53px;
+      margin-top: 45px;
+}
+#list{
+      text-align: center;
+      font-weight: bold;
+      padding-top: 20px;      
+      padding-bottom: 25px; 
+      margin-right: 20px; 
+         
 }
