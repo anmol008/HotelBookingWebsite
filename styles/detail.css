@@ -1,9 +1,64 @@
+
+
+#hotelDetail{
+    display: flex;
+    height: 400px;
+     justify-content: center;
+     margin-right: 1.5%;
+}
+
+#imageDiv{
+    display: flex;
+    border: 1px solid black;
+    width: 67%;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
 .hotelImage{
-    height: 500px;
-    width: 500px;
-    margin-top: 10px;
+    height: 345px;
+    width: 60%;
+    margin-top: 12px;
 }
-#content{
-     margin-left: 4%;
-     margin-right: 4%;
-}
+
+
+
+#form{
+    display: flex;
+    width: 28%;
+    padding: 0 2%;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin-top:30px;
+    border-width:1px 1px 1px 0px;
+    
+  }
+
+  .inputs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .inputs> input{
+    width: 60%;
+  }
+  #submitButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #submitButton button{
+    padding: 2%;
+  }
+  #services{
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+
+  #services h3{
+    font-family: cursive;
+  }
