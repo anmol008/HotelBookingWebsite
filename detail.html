@@ -17,87 +17,105 @@
     <!-- <header> -->
     <section id="wrapper">
         <header id="InsideHeader">
-            <a href="index.html" target="_self"><img src="assests\images\logo.png" alt="logo"></a>
-            <a href="login.html" target="_self" style="margin-right: 2em;" id="HeaderLogin">LOGIN</a>
+            <a href="index.html" style="margin-left: 1%;" target="_self"><img src="assests\images\logo.png"
+                    alt="logo"></a>
+            <a href="login.html" style="margin-right: 2%" target="_self" style="margin-right: 2em;"
+                id="HeaderLogin">Login</a>
         </header>
     </section>
     <!-- </header> -->
 
 
-        <!-- content starts -->
+    <!-- content starts -->
     <section id="content">
 
-        <div style="margin-top: 2%;">
-            <img class="hotelImage"
-                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt=""
-                height="500px" width="800px">
+        <div id="hotelDetail">
+
+            <div id="imageDiv">
+                <img class="hotelImage"
+                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt=""
+                    height="500px" width="800px">
+            </div>
+
+            <form id="form" action="payment.html">
+                <div class="inputs">
+                  <label for="adults" >Adults:</label>
+                  <input  id="adult" type="number" min="1" value="1" name="adult" required>
+                </div>
+                <div class="inputs">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" id="name" required>
+                </div>
+                <div class="inputs">
+                    <label for="fromDate">From Date:</label>
+                    <input  type="date" name="fromDate" id="from-date" required>
+                  </div>
+                  <div class="inputs">
+                    <label for="toDate">To Date:</label>
+                    <input type="date" name="toDate" id="to-date" required>
+                  </div>
+                  <div id="LabelTotal" class="inputs">
+                    <label  for="total">Total:</label>
+                    <input type="text" name="" id="total" readonly value="Rs:">
+                  </div>
+                  <div id="submitButton">
+                    <button type="submit" >Book Now</button>
+                  </div>
+                </form>
         </div>
-
-        <div style="margin-bottom: 1%;">
-            <form method="get" id="IdSubmit" action="payment.html">
-
-
-                <label for="IdAdults"> Adults:</label>
-                <input type="number" min="1" id="IdAdults" name="Address" required>
-                <br>
-                <label for="IdName"> Name:</label>
-                <input type="text" id="IdName" name="Name" required>
-                <br>
-                <label for="IdFromDate"> From Date:</label>
-                <input type="date" id="IdFromDate" name="FromDate" required>
-                <br>
-                <label for="IdToDate"> To Date:</label>
-                <input type="date" id="IdToDate" name="ToDate" required>
-                <br>
-                <label for="IdTotal">Total:</label>
-                <input readonly="value" type="" id="IdTotat" name="Total">
-                <br>
-                <button type="submit" id="IdSubmit">Book now</button>
-            </form>
         </div>
+        <!-- form ends -->
 
-        <div style="margin-top: 1% ;margin-bottom: 2%;">
+        <div id="services">
             <h1>Radisson Blu Hotel</h1>
-            <p>RATING <br> <br> 5 Star </p>
-            AMENITIES
-            <ul>
-                <li>Room service</li>
-                <li>Restaurant</li>
-                <li>Bussiness center</li>
-                <li>Fitness center</li>
-                <li>Pool</li>
-            </ul>
+
+            <h3>RATING </h3> 
+             5 Star
+
+            <div>
+               <h3> AMENITIES </h3>
+                <ul>
+                    <li>Room service</li>
+                    <li>Restaurant</li>
+                    <li>Bussiness center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ul>
+            </div>
             <p>
-                DESCRIPTION
-                <br> <br>
+               <h3> DESCRIPTION </h3>
+            
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem, nihil est cum dolore quam
                 iste!
-                Recusandae inventore accusamus molestiae, <br> dignissimos perspiciatis corporis fuga, dolorem eaque
+                Recusandae inventore accusamus molestiae, dignissimos perspiciatis corporis fuga, dolorem eaque
                 quibusdam officia voluptates delectus.
             </p>
         </div>
+        
     </section>
     <!-- content ends -->
 
 
-    
+
     <!-- footer starts -->
     <footer id="InsideFooter">
         <div id="contact">
-          <a href="contact.html" target="_self" class="btn btn-info btn-sm" data-bs-toggle="modal"
-            data-bs-target="#contact-us"><span>Contact Us</span></a>
+            <a href="contact.html" target="_self" class="btn btn-info btn-sm" data-bs-toggle="modal"
+                data-bs-target="#contact-us"><span>Contact Us</span></a>
         </div>
-  
+
         <div class="copyright">
-          <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+            <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
         </div>
-  
+
         <div id="social-media">
-          <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook"></a>
-          <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram"></a>
-          <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter"><br></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png"
+                    alt="facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png"
+                    alt="instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter"><br></a>
         </div>
-      </footer>
+    </footer>
     </div>
     <!-- footer ends -->
 
