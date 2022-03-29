@@ -5,6 +5,7 @@
     height: 400px;
      justify-content: center;
      margin-right: 1.5%;
+     margin-top: 20px;
 }
 
 #imageDiv{
@@ -26,24 +27,28 @@
 
 #form{
     display: flex;
-    width: 28%;
-    padding: 0 2%;
+    width: 33%;
+    padding: 0 ;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border: 1px solid black;
     margin-top:30px;
     border-width:1px 1px 1px 0px;
-    
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
   }
 
   .inputs{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-top: 10px;
   }
 
   .inputs> input{
-    width: 60%;
+    width: 55%;
+  
   }
   #submitButton{
     display: flex;
@@ -57,8 +62,8 @@
   #services{
       margin-left: 2%;
       margin-right: 2%;
+      margin-top: 15px;
   }
 
-  #services h3{
-    font-family: cursive;
-  }
+  
+  
