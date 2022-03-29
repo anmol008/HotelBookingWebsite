@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Detail</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/styles/common.css">
     <link rel="stylesheet" href="styles/detail.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
 
 </head>
@@ -16,12 +21,11 @@
 <body>
     <!-- <header> -->
     <section id="wrapper">
-        <header id="InsideHeader">
-            <a href="index.html" style="margin-left: 1%;" target="_self"><img src="assests\images\logo.png"
-                    alt="logo"></a>
-            <a href="login.html" style="margin-right: 2%" target="_self" style="margin-right: 2em;"
-                id="HeaderLogin">Login</a>
-        </header>
+      <header id="InsideHeader">
+       <a href="index.html"> <img src="assests\images\logo.png" alt="logo" class="logo" /></a>
+        <a href="login.html" target="_self" class="btn btn-light btn-sm" data-toggle="modal" data-target="#login"
+          style="margin-right: 2em;" id="HeaderLogin">LOGIN</a>
+      </header>
     </section>
     <!-- </header> -->
 
@@ -59,7 +63,7 @@
                     <input type="text" name="" id="total" readonly value="Rs:">
                   </div>
                   <div id="submitButton">
-                    <button type="submit" >Book Now</button>
+                    <button type="submit" class="btn btn-outline-success btn-sm">Book now</button>
                   </div>
                 </form>
         </div>
@@ -67,13 +71,13 @@
         <!-- form ends -->
 
         <div id="services">
-            <h1>Radisson Blu Hotel</h1>
-
-            <h3>RATING </h3> 
-             5 Star
+            <h2>Radisson Blu Hotel</h2>
+         
+            <h4 style="font-family: cursive;">RATING </h4> 
+            <p> 5 Star</p>
 
             <div>
-               <h3> AMENITIES </h3>
+               <h4 style="font-family: cursive;"> AMENITIES </h4>
                 <ul>
                     <li>Room service</li>
                     <li>Restaurant</li>
@@ -83,7 +87,7 @@
                 </ul>
             </div>
             <p>
-               <h3> DESCRIPTION </h3>
+               <h4 style="font-family: cursive;"> DESCRIPTION </h4>
             
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem, nihil est cum dolore quam
                 iste!
@@ -95,30 +99,85 @@
     </section>
     <!-- content ends -->
 
-
-
-    <!-- footer starts -->
+<!-- footer -->
     <footer id="InsideFooter">
-        <div id="contact">
-            <a href="contact.html" target="_self" class="btn btn-info btn-sm" data-bs-toggle="modal"
-                data-bs-target="#contact-us"><span>Contact Us</span></a>
-        </div>
-
-        <div class="copyright">
-            <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
-        </div>
-
-        <div id="social-media">
-            <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png"
-                    alt="facebook"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png"
-                    alt="instagram"></a>
-            <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter"><br></a>
-        </div>
+      <div id="contact">
+        <a style="display: flex;" href="contact.html" target="_self" class="btn btn-primary btn-sm" data-toggle="modal"
+          data-target="#contact-us" id="HeaderLogin"><span>Contact Us</span></a>
+  
+      </div>
+  
+      <div class="copyright">
+        <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+      </div>
+  
+      <div id="socialMedia">
+        <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter"><br></a>
+      </div>
     </footer>
+    
+  
+  
+    <!-- login modal -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="text-align: center; ">
+            <label for="UserName" style="margin-left: 1em 0em 1em 2em; ">Username:</label>
+            <input id="UserName" type="text" placeholder="Enter Username" name="username" required
+              style="margin-left: 3em;">
+            <br>
+            <label for="Password" style="margin: 1em 0em 1em 0em;">Password :</label>
+            <input id="PasswordName" type="password" placeholder="Enter Password" name="password" required
+              style="margin-left: 3em;">
+            <br>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+  
+            <button id="button" onclick="LoginToLocalStorage()" type="button" class="btn btn-primary">LOGIN</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- footer ends -->
-
+  
+  
+    <!-- login modal ends -->
+  
+    <!-- Contact-us modal begin -->
+    <div class="modal fade" id="contact-us" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>        </div>
+          <div class="modal-body">
+            <span>Thank you for reaching out!!!</span><br>
+            <span>Please enter you email and we get back to you.</span><br>
+            <form>
+              <label for="email">Email:</label>
+              <input type="email" placeholder="Enter your email id" name="email" required>
+            </form>
+          </div>
+          <div class="modal-footer">
+  
+            <button type="submit" formaction="index.html" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact modal ends -->
+  
+  
 </body>
 
 </html>
