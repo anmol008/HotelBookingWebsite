@@ -8,6 +8,41 @@
      margin-top: 20px;
 }
 
+.carousel .item {
+  height: 500px;
+}
+.checked{
+  color: orange;
+}
+
+#carouselExampleControls{
+    flex-grow: 3;
+   
+}
+
+#carouselExampleControls .carousel-item {
+  max-height: 350px;
+  max-width: 1000px;
+  padding: 1% 20% ;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+
+  background-image: none;
+}
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rosybrown;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: rosybrown;
+}
 #imageDiv{
     display: flex;
     border: 1px solid black;
@@ -17,11 +52,7 @@
     margin-top: 30px;
 }
 
-.hotelImage{
-    height: 345px;
-    width: 60%;
-    margin-top: 12px;
-}
+
 
 
 
