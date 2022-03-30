@@ -29,8 +29,7 @@
     #content{
         overflow: auto;
         margin-top: -20px;
-        margin-left: auto;
-        margin-right: auto;
+    
         margin-bottom: 5em;
         height: 150%;
         width: 100%;
@@ -60,7 +59,7 @@
     }
     #contact{
         display: flex;
-        margin-left: 2em;
+        margin-left: 1em;
         align-self: center;
     }
     #socialMedia{
@@ -81,3 +80,21 @@
         height: auto;
         max-width: 100%;
     }
+
+    
+        @media only screen and (max-width:576px){
+            header{
+                height: 4em;
+                width: auto;
+            }
+            footer{
+                height: 4em;
+            }
+            #socialMedia{
+                margin: 0%;
+            }
+            #contact{
+                margin-left: 3px;
+            }
+
+        }

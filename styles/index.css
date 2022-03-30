@@ -69,3 +69,43 @@ align-items: center;
     /* iska bhi */
 }
 
+@media only screen and (min-width:576px) and ( max-width:768px) {
+ 
+
+  .cards{
+    height: 150px;
+    width: 150px;
+  }
+  #searchbarDiv{
+      min-height: 350px;
+    }
+    #cityCards{
+      display: grid;
+      grid-template-columns: 40% 40%;
+      grid-row-gap: 20px;
+      grid-column-gap:-30px;
+      margin-left: 50px;
+      width: 100%;
+      
+    }
+    
+  }
+
+  @media only screen and (max-width: 576px){
+    #searchBar{
+      width: 100%;
+    }
+    #searchBar input {
+
+      width: 15em;
+    }
+    #search{
+      min-height: 200px;
+    }
+    #cityCards{
+      
+      display: grid;
+      grid-row-gap: 20px;
+      }
+  
+  } 

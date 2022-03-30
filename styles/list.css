@@ -51,6 +51,7 @@ body a{
   #listView{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     bottom: 0;
   }
   .card {
@@ -69,6 +70,9 @@ body a{
   }
 }
 @media only screen and (max-width:576px){
+  #content{
+    margin-left: 0;
+  }
   .card {
     width: 100%;
   }
@@ -87,7 +91,7 @@ body a{
     flex-direction: column;
    flex-grow: 2;
     width: 100%;
-
+    
   }
   #map img{
     width: 90%;
