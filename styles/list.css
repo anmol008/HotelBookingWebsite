@@ -1,104 +1,99 @@
-body a{
-  text-decoration: none;
-}
-#viewLink{
+#loader {
+  height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 3em;   
 }
-.hotelList img{
+.hotels a:hover {
+  color: black;
+}
+#content .btn-outline-primary {
+  border: none;
+  color: black;
+}
+#content .btn-outline-primary:hover {
+  color: black;
+  background-color: transparent;
+}
+#content .btn-outline-primary:focus {
+  box-shadow: none;
+  color: black;
+}
+#content .btn-outline-primary:active {
+  box-shadow: none;
+  color: black;
+}
+#content .btn-check:checked + .btn-outline-primary {
+  box-shadow: none;
+  color: black;
+  background-color: #0d6efd;
+}
+#content {
+  margin-top: 2%;
+  text-align: center;
+}
+
+#listView {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 2%;
+  grid-row-gap: 3%;
+  margin: 2% 2% 10% 2%;
+  height: auto;
+}
+
+#listView img {
   height: 200px;
   width: 250px;
 }
-#listView{
-  display: flex;
-  flex-wrap: wrap;
-}
-.hotelList{
-  background-color: lightgrey;
-  width: 35em;
-  margin: 3em;
-  display: flex;
-  color: black;
-  text-decoration: none;
-}
-.hotelList:hover{
-  background-color: rosybrown;
-  text-decoration: none;
-}
-.info{
-  margin-left: 4%;
-  margin-top: 4%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-#content ul li{ 
-  display: inline;
-  margin-left: 2em;
-  }
 
-#content ul li a{
-  text-decoration: none;
-  color: black;   
+.hotels {
+  background-color: lightgrey;
+  width: 95%;
+  color: black;
+  display: flex;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-.checked{
+.clickImage {
+  display: flex;
+}
+.hotels a {
+  text-decoration: none;
+  color: black;
+}
+.hotelDetails {
+  margin-left: 4%;
+  text-align: left;
+  margin-top: 4%;
+}
+.hotels:hover {
+  background-color: rosybrown;
+}
+#mapView {
+  margin-top: 15px;
+  height: 600px;
+  width: 100%;
+}
+#mapView-button:checked ~ #mapView {
+  display: grid;
+  width: 100%;
+}
+#mapView-button:checked ~ #listView {
+  display: none;
+}
+
+#listView-button:checked ~ #listView {
+  display: grid;
+}
+#listView-button:checked ~ #mapView {
+  display: none;
+}
+.fill {
   color: orange;
 }
-
-@media only screen and (min-width:576px) and ( max-width:768px) {
-  #listView{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    bottom: 0;
-  }
-  .card {
-    max-width: 180px;
-  }
-  .hotelList {
-    display: flex;
-    width: 80%;
-  }
-  #map img{
-    width: 90%;
-  }
-  #map{
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 575px) {
+  #listView {
+    grid-template-columns: 100%;
   }
 }
-@media only screen and (max-width:576px){
-  #content{
-    margin-left: 0;
-  }
-  .card {
-    width: 100%;
-  }
-  .viewLink{
-    display: flex;
-    justify-content: space-around
-  }
- .info{
-   display: flex;
-   flex-direction: column;
-   font-size: px;
- }
-  .hotelList {
-    margin: 10% 10%;
-    display: flex;
-    flex-direction: column;
-   flex-grow: 2;
-    width: 100%;
-    
-  }
-  #map img{
-    width: 90%;
-  }
-  #map{
-    display: flex;
-    justify-content: center;
-  }
-
-} 

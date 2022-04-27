@@ -1,79 +1,67 @@
-#aboutHotel img{
-    max-height: 300px;
-    max-width: 270px;
+#imageHotel{
+  height: 250px;
+  width: 100%;
 }
-#aboutHotel{
-    background-color: rgb(132, 136, 139);
-    width: 45em;
-    margin: 0 auto;
-    margin-top: 10em;
-    margin-bottom: 2%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+#hotel{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(132,136,139);
+  height: auto;
+  width: 70%;
+  margin: 2% auto;
 }
-.about{
-    padding-left: 1em;
+#content{
+  display: flex;
+  flex-direction: column;
 }
-#detail{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2%;
-    margin-bottom: 8em;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color:  rosybrown;
+#hotelDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 2%;
 }
-@media only screen and (min-width:576px) and ( max-width:768px) {
-    #aboutHotel{
-      width: 90%;
-      margin: 5%;
-    }
-    #aboutHotel{
-        margin-top: 20%;
-    }
+#payDetails{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rosybrown;
+  align-items: center;
+  margin: 0 2% 20% 2%;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 1% 2%;
+  height: auto;
+}
+#customerInfo {
+  text-align: left;
+}
+strong {
+  font-family: cursive;
+}
 
-  }
-  @media only screen and (max-width:576px){
 
-    #aboutHotel{
+
+@media only screen and (max-width: 575px) {
+  #hotel {
+      flex-direction: column;
       width: 100%;
-      margin: 5% 0%;
-      display: flex;
-      flex-direction: column;
-    }
-    .about{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #aboutHotel img{
-      min-width: 100%;
-    }
-    #aboutHotel div{
-      margin: 6% 0%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
-    }
-    #detail{
-      margin: 2% 2%;
-      padding: 2% 2%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .PayButton{
-      width: 90vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-    #aboutHotel{
-
-        margin: 20% 20% 5% 1%;
-    }
+      justify-content: center;
   }
+  #radissonHotel {
+      width: 90%;
+      padding-left: 5%;
+      margin: 1%;
+  }
+  #hotelDetails {
+      text-align: center;
+  }
+  #payDetails {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+  }
+  #payButton {
+      align-self: center;
+  }
+}
